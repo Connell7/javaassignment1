@@ -1,11 +1,21 @@
 package Projectdraft1;
 
+import java.io.FileNotFoundException;
+
 public class Control {
 
-	public static void main(String[] args) 
+	@SuppressWarnings("static-access")
+	public static void main(String[] args) throws FileNotFoundException 
 	{
-		Screen S1 = new Screen("Tonsilitis checker");
-
+		
+		Naivebayes NB = new Naivebayes();
+		NB.Naive();
+		new filemanager6();
+		filemanager6.fm6();
+		new Screen("Tonsilitis checker");
+	
+		
+		
 	}
 
 }
